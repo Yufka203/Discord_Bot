@@ -1,10 +1,22 @@
-🐾 Kedi Sınıflandırıcı Discord Botu
+Kedi Sınıflandırıcı Discord Botu
 Bu proje, kullanıcıların yüklediği görsellerdeki kedilerin yavru mu yoksa yaşlı mı olduğunu yapay zeka ile tahmin eden bir Discord botudur. Görsel sınıflandırma için Keras kullanılmıştır.
 
 📦 Gereksinimler
-Python 3.8 veya üzeri bir sürüm ile birlikte aşağıdaki Python kütüphaneleri gereklidir: discord.py, tensorflow, keras, pillow, numpy. Gerekli kütüphaneleri yüklemek için terminalde şu komutu çalıştırabilirsiniz:
+Python 3.8 veya üzeri bir sürüm ile birlikte aşağıdaki Python kütüphaneleri gereklidir:
 
-nginx
+discord.py
+
+tensorflow
+
+keras
+
+pillow
+
+numpy
+
+Gerekli kütüphaneleri yüklemek için terminalde şu komutu çalıştırabilirsiniz:
+
+bash
 Copy
 Edit
 pip install discord.py tensorflow keras pillow numpy
@@ -22,13 +34,13 @@ labels.txt : Modelin sınıflandırma çıktılarında kullandığı sınıf isi
 🚀 Botu Çalıştırma
 Öncelikle bir Discord botu oluşturun ve token’ınızı alın. Ardından bot.py dosyasının en altındaki bot.run("token") satırını kendi token’ınızla değiştirin. Örnek:
 
-arduino
+python
 Copy
 Edit
 bot.run("senin-token-buraya")
 Sonrasında aşağıdaki komutla botu başlatabilirsiniz:
 
-nginx
+bash
 Copy
 Edit
 python bot.py
@@ -40,7 +52,6 @@ $check
 Bu komutla birlikte bir görsel yüklerseniz, bot bu görseldeki kedinin yavru mu yoksa yaşlı mı olduğunu tahmin eder.
 
 Kullanım Örneği:
-
 Kullanıcı:
 
 bash
@@ -61,7 +72,7 @@ Görseller .jpg, .jpeg veya .png formatında olmalıdır.
 
 Görsel otomatik olarak 224x224 boyutuna getirilir ve modele uygun hale getirilir.
 
-labels.txt dosyasındaki her satır bir sınıfı temsil eder (örneğin: 0 yaşlı, 1 yavru).
+labels.txt dosyasındaki her satır bir sınıfı temsil eder (örneğin: "0 yaşlı", "1 yavru").
 
 🔐 Güvenlik Önerisi
 Discord bot token’ınızı doğrudan kod içerisine yazmak yerine .env dosyasında saklamanız önerilir. Örnek:
@@ -87,4 +98,3 @@ Bu proje MIT lisansı ile açık kaynak olarak sunulmuştur. Dilediğiniz gibi k
 
 ❤️ Teşekkürler
 Bu proje Python, Discord API ve Keras kullanılarak geliştirilmiştir. Kedileri sevenler ve yapay zeka meraklıları için hazırlanmıştır. 😻
-
